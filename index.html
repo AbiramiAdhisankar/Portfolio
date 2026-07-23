@@ -350,6 +350,87 @@ nav {
         font-size: 0.9rem;
     }
 }
+
+/* ================= Experience ================= */
+.experience-section {
+    padding: 90px 10%;
+    background: #070707;
+}
+
+.experience-block {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.experience-item {
+    padding-bottom: 40px;
+    border-bottom: 1px solid rgba(0, 210, 255, 0.15);
+    transition: 0.3s ease;
+}
+
+.experience-item:hover {
+    transform: translateX(6px);
+}
+
+.experience-item h2 {
+    font-size: 1.7rem;
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+.exp-company {
+    font-size: 1.1rem;
+    color: #aaa;
+    margin-bottom: 8px;
+}
+
+.exp-year {
+    font-size: 1rem;
+    color: #00d2ff;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.exp-duties {
+    list-style: none;
+    color: #aaa;
+    line-height: 1.9;
+    font-size: 1rem;
+}
+
+.exp-duties li {
+    position: relative;
+    padding-left: 22px;
+}
+
+.exp-duties li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--accent-blue);
+}
+
+/* Experience Mobile */
+@media (max-width: 768px) {
+    .experience-item h2 {
+        font-size: 1.4rem;
+    }
+
+    .exp-company {
+        font-size: 1rem;
+    }
+
+    .exp-year {
+        font-size: 0.9rem;
+    }
+
+    .exp-duties {
+        font-size: 0.9rem;
+    }
+}
+
 /* ================= Contact Section ================= */
 
 .contact-section {
@@ -633,6 +714,7 @@ nav {
         <li><a href="#skills"><b>Skills</b></a></li>
         <li><a href="#projects"><b>Projects</b></a></li>
         <li><a href="#education"><b>Education</b></a></li>
+        <li><a href="#experience"><b>Experience</b></a></li>
         <li><a href="#achievements"><b>Achievements</b></a></li> 
         <li><a href="#contact"><b>Contact</b></a></li>
     </ul>
@@ -889,6 +971,32 @@ nav {
             <p class="edu-year">
                 2021 – 2022 • 69%
             </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="experience-section" data-aos="fade-up" id="experience">
+
+    <h1 class="section-title">EXPERIENCE</h1>
+
+    <div class="experience-block">
+
+        <div class="experience-item" data-aos="fade-left">
+            <h2>Intern</h2>
+            <p class="exp-company">
+                IITM Pravartak Technologies
+            </p>
+            <span class="exp-year">
+                Apr 2026 – Present (Ongoing)
+            </span>
+            <ul class="exp-duties">
+                <li>Performed document chunking and data validation for AI document processing.</li>
+                <li>Assisted in web scraping and structured data extraction.</li>
+                <li>Processed PDF documents and prepared structured JSONL datasets.</li>
+                <li>Validated document metadata and ensured data quality.</li>
+            </ul>
         </div>
 
     </div>
