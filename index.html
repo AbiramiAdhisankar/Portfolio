@@ -251,12 +251,28 @@ nav {
     padding: 90px 10%;
 }
 
+.project-group-title {
+    font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+    color: #fff;
+    margin: 60px 0 40px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--accent-blue);
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.project-group-title i {
+    color: var(--accent-blue);
+    font-size: 1.3rem;
+}
+
 .project-block {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 80px;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
+    padding-bottom: 50px;
     gap: 60px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -270,22 +286,23 @@ nav {
 }
 
 .project-text h2 {
-    font-size: clamp(1.8rem, 3vw, 2.5rem);
-    margin-bottom: 20px;
+    font-size: clamp(1.8rem, 3vw, 2.3rem);
+    margin-bottom: 18px;
     color: #fff;
 }
 
 .project-desc {
-    font-size: 1.05rem;
+    font-size: 1.02rem;
     color: #aaa;
     line-height: 1.8;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .tech-stack {
     color: var(--accent-blue);
     line-height: 1.6;
     margin-bottom: 15px;
+    font-size: 0.95rem;
 }
 
 .project-text .btn-download {
@@ -303,7 +320,7 @@ nav {
 }
 
 .project-image img {
-    width: 230px;
+    width: 240px;
     max-width: 100%;
     height: 300px;
     object-fit: cover;
@@ -825,6 +842,8 @@ nav {
 <section class="projects-section" id="projects" data-aos="fade-up">
     <h1 class="section-title">PROJECTS</h1>
 
+    <h2 class="project-group-title"><i class="fas fa-robot"></i> AI Chatbots & Assistants</h2>
+
     <div class="project-block" data-aos="fade-up">
         <div class="project-text" data-aos="fade-left">
             <h2>Lumi AI</h2>
@@ -835,7 +854,6 @@ nav {
                 Java • Android Services • Groq API • SpeechRecognizer • TTS
             </p>
         </div>
-
         <div class="project-image">
             <img src="ic_lumi.jpeg" alt="LUMI AI Project">
         </div>
@@ -843,55 +861,62 @@ nav {
 
     <div class="project-block" data-aos="fade-up">
         <div class="project-text" data-aos="fade-right">
-            <h2>Expense Tracker</h2>
+            <h2>Mindmate AI</h2>
             <p class="project-desc">
-                A fully functional Android expense tracker designed to manage
-                daily expenses and income with categorized transactions,
-                financial reports, and a customizable user interface.
+                An intelligent empathetic chatbot application built to provide interactive emotional wellness conversations, active support, and real-time query responses with adaptive tone guidance.
             </p>
             <p class="tech-stack">
-                Java • Android Studio • SQLite • SharedPreferences • Canvas
+                AI / NLP • Android • API Integration • Conversational UI
             </p>
-            <a href="https://github.com/AbiramiAdhisankar/Expense-Tracker"
-               target="_blank"
-               class="btn-download">
-                View on GitHub
-            </a>
-            <a href="https://github.com/AbiramiAdhisankar/Expense-Tracker/releases/tag/v1.0.0"
-               target="_blank"
-               class="btn-download">
-                Download APK
-            </a>
         </div>
-
         <div class="project-image">
-            <img src="expense-tracker.jpeg" alt="Expense Tracker Project">
+            <img src="ic_lumi.jpeg" alt="Mindmate AI Project">
+        </div>
+    </div>
+
+    <h2 class="project-group-title"><i class="fas fa-mobile-alt"></i> App Development</h2>
+
+    <div class="project-block" data-aos="fade-up">
+        <div class="project-text" data-aos="fade-left">
+            <h2>Prime Cals</h2>
+            <p class="project-desc">
+                An enhanced Android calculator app featuring standard arithmetic, Prime Number detection, LCM & GCD calculations, square and cube roots, persistent calculation history using Room Database, and haptic feedback.
+            </p>
+            <p class="tech-stack">
+                Java • Android • Room Database • RecyclerView • Material Components • Mathematical Algorithms
+            </p>
+            <a href="https://github.com/AbiramiAdhisankar/Prime-Cals" target="_blank" class="btn-download">View on GitHub</a>
+            <a href="https://github.com/AbiramiAdhisankar/Prime-Cals/releases/tag/v2.0.0" target="_blank" class="btn-download">Download APK</a>
+        </div>
+        <div class="project-image">
+            <img src="prime.jpeg" alt="Prime Cals Project">
         </div>
     </div>
 
     <div class="project-block" data-aos="fade-up">
         <div class="project-text" data-aos="fade-right">
-            <h2>Java Maze</h2>
+            <h2>Expense Tracker</h2>
             <p class="project-desc">
-                Gamified Java learning application designed to teach core programming 
-                concepts interactively through levels and challenges.
+                A fully functional Android expense tracker designed to manage daily expenses and income with categorized transactions, financial reports, and a customizable user interface.
             </p>
             <p class="tech-stack">
-                Java • Android Studio • Game Logic • UI Design
+                Java • Android Studio • SQLite • SharedPreferences • Canvas
             </p>
+            <a href="https://github.com/AbiramiAdhisankar/Expense-Tracker" target="_blank" class="btn-download">View on GitHub</a>
+            <a href="https://github.com/AbiramiAdhisankar/Expense-Tracker/releases/tag/v1.0.0" target="_blank" class="btn-download">Download APK</a>
         </div>
-
         <div class="project-image">
-            <img src="maze.jpeg" alt="Java Maze Project">
+            <img src="expense-tracker.jpeg" alt="Expense Tracker Project">
         </div>
     </div>
+
+    <h2 class="project-group-title"><i class="fas fa-microchip"></i> IoT & Hardware</h2>
 
     <div class="project-block" data-aos="fade-up">
         <div class="project-text" data-aos="fade-left">
             <h2>Guard Mine</h2>
             <p class="project-desc">
-                Smart mining safety helmet that monitors temperature, humidity, 
-                heart rate, and SpO2 levels with real-time Blynk app integration.
+                Smart mining safety helmet that monitors temperature, humidity, heart rate, and SpO2 levels with real-time Blynk app integration.
             </p>
             <p class="tech-stack">
                 IoT • DHT11 • MAX30100 • Blynk • Embedded Systems
@@ -902,58 +927,26 @@ nav {
         </div>
     </div>
 
+    <h2 class="project-group-title"><i class="fas fa-globe"></i> Web Development</h2>
+
     <div class="project-block" data-aos="fade-up">
         <div class="project-text" data-aos="fade-right">
             <h2>Student Leave Form</h2>
             <p class="project-desc">
-                Created an online system for students to apply for leave, 
-                with requests stored securely in Firebase Realtime Database for easy access 
-                and tracking by teachers or administrators.
+                Created an online system for students to apply for leave, with requests stored securely in Firebase Realtime Database for easy access and tracking by teachers or administrators.
             </p>
             <p class="tech-stack">
                 Frontend: HTML, CSS, JavaScript • Backend: Firebase Realtime Database • Hosting: Firebase Hosting
             </p>
             <a href="https://student-leave-form.web.app" target="_blank" class="btn-download">View Live</a>
         </div>
-
         <div class="project-image">
             <img src="student-leave-form.jpeg" alt="Student Leave Form Project">
         </div>
     </div>
 
     <div class="project-block" data-aos="fade-up">
-    <div class="project-text" data-aos="fade-left">
-        <h2>Prime Cals</h2>
-        <p class="project-desc">
-            An enhanced Android calculator app featuring standard arithmetic,
-            Prime Number detection, LCM & GCD calculations, square and cube roots,
-            persistent calculation history using Room Database, and haptic feedback
-            for an improved user experience.
-        </p>
-        <p class="tech-stack">
-            Java • Android • Room Database • RecyclerView • Material Components • Mathematical Algorithms
-        </p>
-
-        <a href="https://github.com/AbiramiAdhisankar/Prime-Cals"
-           target="_blank"
-           class="btn-download">
-            View on GitHub
-        </a>
-
-        <a href="https://github.com/AbiramiAdhisankar/Prime-Cals/releases/tag/v2.0.0"
-           target="_blank"
-           class="btn-download">
-            Download APK
-        </a>
-    </div>
-
-    <div class="project-image">
-        <img src="prime.jpeg" alt="Prime Cals Project">
-    </div>
-</div>
-
-    <div class="project-block" data-aos="fade-up">
-        <div class="project-text" data-aos="fade-right">
+        <div class="project-text" data-aos="fade-left">
             <h2>Department Symposium Website</h2>
             <p class="project-desc">
                 Developed and deployed the official website for the department symposium to showcase event details, schedules, and announcements. Designed a responsive UI for better accessibility across devices.
@@ -963,9 +956,25 @@ nav {
             </p>
             <a href="https://abiramiadhisankar.github.io/TechAura2K26/" target="_blank" class="btn-download">View Live</a>
         </div>
-
         <div class="project-image">
             <img src="college.PNG" alt="Symposium Project">
+        </div>
+    </div>
+
+    <h2 class="project-group-title"><i class="fas fa-gamepad"></i> Game Development</h2>
+
+    <div class="project-block" data-aos="fade-up">
+        <div class="project-text" data-aos="fade-right">
+            <h2>Java Maze</h2>
+            <p class="project-desc">
+                Gamified Java learning application designed to teach core programming concepts interactively through levels and challenges.
+            </p>
+            <p class="tech-stack">
+                Java • Android Studio • Game Logic • UI Design
+            </p>
+        </div>
+        <div class="project-image">
+            <img src="maze.jpeg" alt="Java Maze Project">
         </div>
     </div>
 </section>
@@ -1100,7 +1109,6 @@ toggle.addEventListener("click", () => {
     navLinks.classList.toggle("active");
 });
 
-// Close mobile menu when a nav link is clicked
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('active');
